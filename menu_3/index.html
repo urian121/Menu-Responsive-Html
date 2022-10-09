@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+  
+  <nav class="navbar">
+    <div class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/2/23/AS_sample_logo.png" alt="LOGO"></div>
+    <div class="push-left">
+      <button id="menu-toggler" data-class="menu-active" class="hamburger">
+        <span class="hamburger-line hamburger-line-top"></span>
+        <span class="hamburger-line hamburger-line-middle"></span>
+        <span class="hamburger-line hamburger-line-bottom"></span>
+      </button>
+  
+      <!--  Menu compatible with wp_nav_menu  -->
+      <ul id="primary-menu" class="menu nav-menu">
+        <li class="menu-item current-menu-item"><a class="nav__link" href="#">Home</a></li>
+        <li class="menu-item dropdown"><a class="nav__link" href="#">About</a>
+          <ul class="sub-nav">
+            <li><a class="sub-nav__link" href="#">link 1</a></li>
+            <li><a class="sub-nav__link" href="#">link 2</a></li>
+            <li><a class="sub-nav__link" href="#">link 3 - long link - long link - long link</a></li>
+          </ul>
+  
+        </li>
+        <li class="menu-item dropdown"><a class="nav__link" href="#">Contact</a>
+          <ul class="sub-nav">
+            <li><a class="sub-nav__link" href="#">link 1</a></li>
+            <li><a class="sub-nav__link" href="#">link 2</a></li>
+            <li><a class="sub-nav__link" href="#">link 3 - long link - long link - long link</a></li>
+          </ul>
+        </li>
+        <li class="menu-item "><a class="nav__link" href="#">Blog</a>
+  
+        </li>
+      </ul>
+  
+    </div>
+  </nav>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="menu.js"></script>
+
+</body>
+</html>
