@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu 8</title>
+    <link rel="stylesheet" href="./menu.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="menu-toggle">Logo</div>
+      <div class="profile">
+        <div class="user">
+          <h3>Katherine Cooper</h3>
+          <p>@probablykat66</p>
+        </div>
+        <div class="img-box">
+          <img
+            src="https://i.postimg.cc/BvNYhMHS/user-img.jpg"
+            alt="some user image" />
+        </div>
+      </div>
+      <div class="menu">
+        <ul>
+          <li>
+            <a href="#"><i class="ph-bold ph-user"></i>&nbsp;Profile</a>
+          </li>
+          <li>
+            <a href="#"
+              ><i class="ph-bold ph-envelope-simple"></i>&nbsp;Inbox</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="ph-bold ph-gear-six"></i>&nbsp;Settings</a>
+          </li>
+          <li>
+            <a href="#"><i class="ph-bold ph-question"></i>&nbsp;Help</a>
+          </li>
+          <li>
+            <a href="#"><i class="ph-bold ph-sign-out"></i>&nbsp;Sign Out</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <script>
+      let profile = document.querySelector(".profile");
+      let menu = document.querySelector(".menu");
+
+      profile.onclick = function () {
+        menu.classList.toggle("active");
+      };
+    </script>
+  </body>
+</html>
